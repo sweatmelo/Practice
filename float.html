@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #q{
+    float: left;
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    /* position: absolute;  */
+    /* right: -100px;  */
+  }
+  #w{
+    float: left;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+  }
+</style>
+<script>
+  // setTimeout(()=>{
+  //   console.log('1');
+  // })
+  // new Promise((resolve,reject)=>{
+  //   console.log('2');
+  //   resolve()
+  // }).then(()=>{
+  //   console.log(3);
+  // })
+
+  let obj = {
+    a:1,
+    get1() {
+      console.log(this.a);
+    },
+    get2:()=>{
+      console.log(this.a);
+    }
+  }
+
+  obj.get1()
+</script>
+<body>
+  <div id="q"></div>
+  <div id="w"></div>
+</body>
+</html>
